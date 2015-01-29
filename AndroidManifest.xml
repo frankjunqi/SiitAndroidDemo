@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.siit.picassodemo"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="19" />
+
+    <!-- This is required for Picasso to work. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- The following permissions are OPTIONAL. -->
+
+
+    <!-- Used to adjust the work load depending on the type of network the device is using. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Used to load images from the gallery content provider. -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Used to load images for contact photos. -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="com.siit.util.PicassoApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.PicassoSample" >
+        <activity
+            android:name="com.siit.gridviewdemo.SampleGridViewActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.siit.contactsdemo.SampleContactsActivity" />
+        <activity android:name="com.siit.gallerydemo.SampleGalleryActivity" />
+        <activity android:name="com.siit.listviewdemo.SampleListDetailActivity" />
+        <activity android:name="com.siit.imageviewdemo.ImageViewShowActivity" />
+
+        <!-- 布局 -->
+        <activity android:name="com.siit.layoutdemo.LayoutDemoActivity" />
+        <activity android:name="com.siit.layoutdemo.FrameLayoutActivity" />
+        <activity android:name="com.siit.layoutdemo.LinearLayoutActivity" />
+        <activity android:name="com.siit.layoutdemo.RelativeLayoutActivity" />
+        <activity android:name="com.siit.layoutdemo.TableLayoutActivity" />
+        <activity android:name="com.siit.layoutdemo.AbsoluteLayoutActivity" />
+
+        <!-- com.siit.activitylifecycle -->
+        <activity
+            android:name="com.siit.activitylifecycle.ActivityA"
+            android:launchMode="singleTask" />
+        <activity android:name="com.siit.activitylifecycle.ActivityB" />
+        <activity android:name="com.siit.activitylifecycle.ActivityC" />
+        <activity
+            android:name="com.siit.activitylifecycle.DialogActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+
+        <!-- MainActivity com.siit.fragmentdemo -->
+        <activity android:name="com.siit.fragmentdemo.MainActivity" />
+        <activity android:name="com.siit.sharepreferencesdemo.SharedPreferencesDemoActivity" />
+        <activity android:name="com.siit.dialogdemo.DialogDemoActivity" />
+        <activity android:name="com.siit.notificationAndtoastdemo.NotificationAndToastDemoActivity" />
+        <activity android:name="com.siit.menudemo.MenuDemoActivity" />
+        <activity android:name="com.siit.asynctaskdemo.AsynctaskDemoActivity" />
+        <activity android:name="com.siit.okhttpdemo.OkhttpDemoActivity" />
+        <activity android:name="com.siit.handlerdemo.HandlerDemoActivity" />
+        <activity android:name="com.siit.broadcasedemo.BroadcastDemoActivity" />
+        <activity android:name="com.siit.servicedemo.ServiceDemoActivity" />
+
+        <service android:name="com.siit.servicedemo.PlayService" >
+        </service>
+        <service android:name="com.siit.servicedemo.HelloService" >
+        </service>
+        <service android:name="com.siit.servicedemo.IntentSer" >
+        </service>
+        <service android:name="com.siit.servicedemo.LocalService" >
+        </service>
+        <service android:name="com.siit.servicedemo.MessengerService" >
+        </service>
+
+        <receiver android:name="com.siit.appwidgetproviderdemo.SampleWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/sample_widget_info" />
+        </receiver>
+    </application>
+
+</manifest>
