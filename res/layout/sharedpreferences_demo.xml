@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10.0dp"
+            android:text="登录名：SIIT\n昵称: FRANK\n手机号码:18550195586\n qq:794545236" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="将上面数据写入siit_sharepreferences文件中" />
+
+        <Button
+            android:id="@+id/btn_show"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="将siit_sharepreferences文件中数据显示在下面" />
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10.0dp"
+            android:text="......." />
+    </LinearLayout>
+
+</ScrollView>
