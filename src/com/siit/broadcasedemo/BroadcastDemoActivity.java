@@ -85,7 +85,6 @@ public class BroadcastDemoActivity extends PicassoSampleActivity implements
 	/**
 	 * 广播的使用
 	 * 
-	 * @author kjh08490
 	 * 
 	 */
 	class NetworkBroadcastReceiver extends BroadcastReceiver {

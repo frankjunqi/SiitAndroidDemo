@@ -8,7 +8,6 @@ import com.siit.picassodemo.R;
 /**
  * ¾ø¶Ô²¼¾Ö
  * 
- * @author kjh08490
  * 
  */
 public class AbsoluteLayoutActivity extends PicassoSampleActivity {

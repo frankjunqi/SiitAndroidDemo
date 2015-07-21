@@ -42,7 +42,6 @@ import android.net.NetworkInfo;
  * 允许您扩展毕加索加载图片不支持的方式,默认情况下lib库中。
  * 你需要继承RequestHandler，你必须复写2个放方法: canHandleRequest() & load()您的自定义逻辑加载图片。
  * 如果自定义加载图片器，那么你需要在 Picasso.Builder#addRequestHandler(RequestHandler)进行加入自定义的加载器；
- * @author kjh08490
  *
  */
 public abstract class RequestHandler {

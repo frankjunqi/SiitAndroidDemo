@@ -29,7 +29,6 @@ import static android.content.ContentResolver.SCHEME_FILE;
 import static com.siit.picassoutil.Picasso.LoadedFrom.DISK;
 /**
  * 从本地文件中读取file的bitmap进行显示
- * @author kjh08490
  *
  */
 class AssetRequestHandler extends RequestHandler {

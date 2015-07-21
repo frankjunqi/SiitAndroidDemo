@@ -593,7 +593,6 @@ public class Picasso {
 	/**
 	 * 取消请求队列的线程
 	 * 
-	 * @author kjh08490
 	 * 
 	 */
 	private static class CleanupThread extends Thread {

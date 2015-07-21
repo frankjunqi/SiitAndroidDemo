@@ -94,7 +94,6 @@ class PicassoExecutorService extends ThreadPoolExecutor {
 
   /**
    * PicassoFutureTask 根据优先级进行排序一下 execute
-   * @author kjh08490
    *
    */
   private static final class PicassoFutureTask extends FutureTask<BitmapHunter>

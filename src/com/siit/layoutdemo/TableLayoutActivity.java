@@ -8,7 +8,6 @@ import com.siit.picassodemo.R;
 /**
  * 表格布局和绝对布局
  * 
- * @author kjh08490
  * 
  */
 public class TableLayoutActivity extends PicassoSampleActivity {

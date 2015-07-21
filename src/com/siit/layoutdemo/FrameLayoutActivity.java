@@ -8,7 +8,6 @@ import com.siit.picassodemo.R;
 /**
  * ²ã²¼¾Ö
  * 
- * @author kjh08490
  * 
  */
 public class FrameLayoutActivity extends PicassoSampleActivity {

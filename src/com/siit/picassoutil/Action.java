@@ -27,7 +27,6 @@ import com.siit.picassoutil.Picasso.Priority;
  * Action代表了一个具体的加载任务，主要用于图片加载后的结果回调，有两个抽象方法，complete和error，
  * 也就是当图片解析为bitmap后用户希望做什么。最简单的就是将bitmap设置给imageview，失败了就将错误通过回调通知到上层。
  * 
- * @author kjh08490
  * 
  * @param <T>
  */

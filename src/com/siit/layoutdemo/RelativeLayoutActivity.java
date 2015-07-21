@@ -8,7 +8,6 @@ import com.siit.picassodemo.R;
 /**
  * 相对布局
  * 
- * @author kjh08490
  * 
  */
 public class RelativeLayoutActivity extends PicassoSampleActivity {

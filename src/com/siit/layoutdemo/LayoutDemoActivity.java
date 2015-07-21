@@ -12,7 +12,6 @@ import com.siit.picassodemo.R;
 /**
  * ²¼¾Ö½²½â
  * 
- * @author kjh08490
  * 
  */
 public class LayoutDemoActivity extends PicassoSampleActivity implements

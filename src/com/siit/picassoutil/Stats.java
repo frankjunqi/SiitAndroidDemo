@@ -31,7 +31,6 @@ import android.os.Message;
  * dispatchBitmapTransformed() dispatchDownloadFinished() dispatchCacheHit()
  * dispatchCacheMiss() shutdown()
  * 
- * @author kjh08490
  * 
  */
 class Stats {
@@ -67,7 +66,6 @@ class Stats {
 		 * HandlerThread有自己的消息队列(Looper)，一般HandlerThread和Handler类配合使用，
 		 * Handler将消息发往HandlerThread的消息队列， Handler处理消息。(StatsHandler)
 		 * 
-		 * @author kjh08490
 		 * 
 		 */
 		this.statsThread = new HandlerThread(STATS_THREAD_NAME,
@@ -130,6 +128,7 @@ class Stats {
 
 	/**
 	 * 供外部获取内存快照的信息
+	 * 
 	 * @return
 	 */
 	StatsSnapshot createSnapshot() {
@@ -143,6 +142,7 @@ class Stats {
 
 	/**
 	 * 计算bitmap的大小（字节）交给handler进行处理相加
+	 * 
 	 * @param bitmap
 	 * @param what
 	 */
@@ -162,7 +162,6 @@ class Stats {
 	 * HandlerThread有自己的消息队列(Looper)，一般HandlerThread和Handler类配合使用，
 	 * Handler将消息发往HandlerThread的消息队列， Handler处理消息。(StatsHandler)
 	 * 
-	 * @author kjh08490
 	 * 
 	 */
 	private static class StatsHandler extends Handler {

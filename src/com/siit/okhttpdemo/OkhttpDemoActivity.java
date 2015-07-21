@@ -22,6 +22,7 @@ import com.squareup.okhttp.Response;
 public class OkhttpDemoActivity extends PicassoSampleActivity implements
 		OnClickListener {
 	private static final String GETURL = "https://api.github.com/repos/square/okhttp/contributors";
+	private static final String POSTURL = "http://172.16.2.50:18080/view/AndroidBuild/job/andriod_build_with_parameters/";
 	private Button btn_get;
 	private Button btn_post;
 	private Button btn_entityback;
@@ -57,7 +58,7 @@ public class OkhttpDemoActivity extends PicassoSampleActivity implements
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.okhtttp_layout);
 		loadingDialog = new LoadingDialog(this);
-		loadingDialog.setLoadingText("Êı¾İ¼ÓÔØÖĞ...");
+		loadingDialog.setLoadingText("é”Ÿæ–¤æ‹·é”Ÿæ·ç¡·æ‹·é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·...");
 		btn_get = (Button) findViewById(R.id.btn_get);
 		btn_post = (Button) findViewById(R.id.btn_post);
 		btn_entityback = (Button) findViewById(R.id.btn_entityback);
@@ -119,7 +120,7 @@ public class OkhttpDemoActivity extends PicassoSampleActivity implements
 	}
 
 	/**
-	 * GetÇëÇó
+	 * Geté”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·
 	 */
 	private String testGetRequest(String url) throws IOException {
 		OkHttpClient client = new OkHttpClient();
@@ -129,13 +130,13 @@ public class OkhttpDemoActivity extends PicassoSampleActivity implements
 	}
 
 	/**
-	 * PostÇëÇó
+	 * Posté”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·
 	 */
 	private String testPostRequest() {
 		String json = bowlingJson("Jesse", "Jake");
-		String response = "ÎŞÊı¾İ";
+		String response = "é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·";
 		try {
-			response = postRequest("http://www.roundsapp.com/post", json);
+			response = postRequest(POSTURL, "branchCore=master");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -165,7 +166,7 @@ public class OkhttpDemoActivity extends PicassoSampleActivity implements
 	}
 
 	/**
-	 * ²âÊÔOkHttpContributors
+	 * é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·OkHttpContributors
 	 * 
 	 * @param tv
 	 */
@@ -176,7 +177,7 @@ public class OkhttpDemoActivity extends PicassoSampleActivity implements
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return "ÎŞ½á¹û";
+		return "é”Ÿç«æ–¤æ‹·é”Ÿï¿½";
 	}
 
 }

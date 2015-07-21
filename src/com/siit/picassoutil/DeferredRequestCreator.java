@@ -26,7 +26,6 @@ import android.widget.ImageView;
  * )，在视图树种全局事件改变时得到通知。这个全局事件不仅还包括整个树的布局，从绘画过程开始，触摸模式的改变等。
  * ViewTreeObserver不能够被应用程序实例化，因为它是由视图提供，参照getViewTreeObserver()以查看更多信息。
  * 
- * @author kjh08490
  * 
  */
 class DeferredRequestCreator implements ViewTreeObserver.OnPreDrawListener {

@@ -10,7 +10,6 @@ import android.widget.Toast;
 /**
  * 通过message桥梁以及IBind进行通信；
  * IncomingHandler中的Thread的sleep操作可以看出，默认情况下这个service是在主线程中；
- * @author kjh08490
  *
  */
 public class MessengerService extends Service {

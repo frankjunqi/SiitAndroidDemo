@@ -24,7 +24,6 @@ import android.widget.ImageView;
  * ImageViewAction实现了Action，在complete中将bitmap和imageview组成了一个PicassoDrawable，
  * 里面会实现淡出的动画效果。
  * 
- * @author kjh08490
  * 
  */
 class ImageViewAction extends Action<ImageView> {

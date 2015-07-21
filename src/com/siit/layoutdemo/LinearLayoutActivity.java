@@ -9,7 +9,6 @@ import com.siit.picassodemo.R;
 /**
  * 线性布局
  * 
- * @author kjh08490
  * 
  */
 public class LinearLayoutActivity extends PicassoSampleActivity {

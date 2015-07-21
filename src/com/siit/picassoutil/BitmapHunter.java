@@ -41,7 +41,6 @@ import static com.siit.picassoutil.Utils.log;
 /**
  * 异步任务线程中进行，就是下面的BitmapHunter。
  * BitmapHunter是一个Runnable
- * @author kjh08490
  * 
  */
 class BitmapHunter implements Runnable {

@@ -61,7 +61,6 @@ import static com.siit.picassoutil.Utils.log;
  * ，也就是请求也是异步的，这样应该是为了Ui线程更加流畅，同时保证请求的顺序，因为handler的消息队列。
  * 外部调用的是dispatchXXX方法，然后通过handler将请求转换到对应的performXXX方法。
  * Dispatcher集合PicassoExecutorService进行分析；
- * @author kjh08490
  * 
  */
 class Dispatcher {
@@ -500,7 +499,6 @@ class Dispatcher {
 	 * HandlerThread有自己的消息队列(Looper)，一般HandlerThread和Handler类配合使用，
 	 * Handler将消息发往HandlerThread的消息队列， Handler处理消息。
 	 * 
-	 * @author kjh08490
 	 * 
 	 */
 	private static class DispatcherHandler extends Handler {
@@ -580,7 +578,6 @@ class Dispatcher {
 	 * HandlerThread有自己的消息队列(Looper)，一般HandlerThread和Handler类配合使用，
 	 * Handler将消息发往HandlerThread的消息队列， Handler处理消息。
 	 * 
-	 * @author kjh08490
 	 * 
 	 */
 	static class DispatcherThread extends HandlerThread {
@@ -592,8 +589,7 @@ class Dispatcher {
 
 	/**
 	 * 广播的使用
-	 * @author kjh08490
-	 *
+	 * 
 	 */
 	static class NetworkBroadcastReceiver extends BroadcastReceiver {
 		static final String EXTRA_AIRPLANE_STATE = "state";

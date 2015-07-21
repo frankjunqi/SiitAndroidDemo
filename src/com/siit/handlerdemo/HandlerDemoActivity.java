@@ -18,7 +18,6 @@ import com.siit.picassodemo.R;
  * 
  * 这里在picasso中用到了第三种方式进行线程之间的交互的。如：内存快照就是这样实现的。
  * 
- * @author kjh08490
  * 
  */
 public class HandlerDemoActivity extends PicassoSampleActivity implements
@@ -145,7 +144,6 @@ public class HandlerDemoActivity extends PicassoSampleActivity implements
 	/**
 	 * 默认为主进程的Looper队列
 	 * 
-	 * @author kjh08490
 	 * 
 	 */
 	class HandlerTest extends Handler {
